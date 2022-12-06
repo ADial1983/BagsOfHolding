@@ -1,0 +1,11 @@
+.bags {
+    display: flex;
+    flex-direction: column;
+}
+
+.bag {
+    background-color: rgb(255, 230, 138);
+    border: 2px dotted rgb(198, 148, 0);
+    padding: 0.7rem;
+    margin: 0.5rem;
+}
