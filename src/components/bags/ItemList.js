@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Bags.css"
 
-export const ItemList = ({bagId}) => {
+export const ItemList = ({bagId, setItemsToDelete}) => {
     const [items, setItems] = useState([])
 
     const localBagsUser = localStorage.getItem("bags_user")
@@ -17,6 +17,9 @@ export const ItemList = ({bagId}) => {
                 .then(response => response.json())
                 .then((itemsArray) => {
                     setItems(itemsArray)
+                    return itemsArray
+                }).then((itemsArray) => {
+                    setItemsToDelete(itemsArray)
                 })
         },
         []

@@ -41,9 +41,9 @@ export const NewItem = () => {
         // TODO: Create the object to be saved to the API
         const itemToSendToAPI = {
             userId: bagsUserObject.id,
-            bagId: bagId,
+            bagId: parseInt(bagId),
             name: item.name,
-            weight: item.weight,
+            weight: parseFloat(item.weight),
             description: item.description,
             typeId: item.typeId
         }

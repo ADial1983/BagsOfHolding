@@ -31,12 +31,12 @@ export const NewBag = () => {
         const bagToSendToAPI = {
             userId: bagsUserObject.id,
             name: bag.name,
-            maxWeight: bag.maxWeight,
-            copper: bag.copper,
-            silver: bag.silver,
-            electrum: bag.electrum,
-            gold: bag.gold,
-            platinum: bag.platinum
+            maxWeight: parseInt(bag.maxWeight),
+            copper: parseInt(bag.copper),
+            silver: parseInt(bag.silver),
+            electrum: parseInt(bag.electrum),
+            gold: parseInt(bag.gold),
+            platinum: parseInt(bag.platinum)
         }
 
         // TODO: Perform the fetch() to POST the object to the API

@@ -4,8 +4,8 @@
 }
 
 .bag {
-    background-color: rgb(255, 230, 138);
-    border: 2px dotted rgb(198, 148, 0);
+    background-color: #51bb946c;
+    border: 2px dotted rgb(0, 122, 65);
     padding: 0.7rem;
     margin: 0.5rem;
 }

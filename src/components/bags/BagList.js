@@ -42,7 +42,7 @@ export const BagList = () => {
                         return <section className="bag">
                             <header>{bag.name}</header>
                             <div>Max Bag Weight: {bag.maxWeight}</div>
-                            <button onClick={() => navigate(`/bags/${bag.id}`)}>View Bag Details</button>
+                            <button onClick={() => navigate(`/bags/${bag.id}`)}>Open Bag</button>
                         </section>
                     }
                 )
