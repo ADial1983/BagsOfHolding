@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { useParams, useNavigate } from "react-router-dom"
+import { BagCurrentWeight } from "./BagCurrentWeight"
 import { ItemList } from "./ItemList"
 
 export const BagDetails = () => {
@@ -48,12 +49,13 @@ export const BagDetails = () => {
         <section className="bag_details">
             <h2 className="bag_header">{bag.name}</h2>
             <section className="bag_buttons">
-                <button onClick={() => navigate(`/bags/${bagId}/bagEdit`)}>Edit Bag</button>
-                <button onClick={() => navigate(`/bags/${bagId}/itemCreate`)}>Add Item</button>
-                <button onClick={handleDelete}>Delete Bag</button>
+                <button className="bag_button" onClick={() => navigate(`/bags/${bagId}/bagEdit`)}>Edit Bag</button>
+                <button className="bag_button" onClick={() => navigate(`/bags/${bagId}/itemCreate`)}>Add Item</button>
+                <button className="bag_button" onClick={handleDelete}>Delete Bag</button>
             </section>
             <section className="currency">
                 <div className="currency_piece">Max Weight: {bag.maxWeight}</div>
+                <BagCurrentWeight bagId={bagId} />
                 <div className="currency_piece">Copper: {bag.copper}</div>
                 <div className="currency_piece">Silver: {bag.silver}</div>
                 <div className="currency_piece">Electrum: {bag.electrum}</div>

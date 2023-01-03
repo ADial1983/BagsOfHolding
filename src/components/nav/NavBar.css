@@ -1,15 +1,18 @@
 .navbar {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: left;
+    justify-content: space-between;
+    border: 2px #51bb946c;
+    border-style: none none solid none;
+    list-style-type: none;
+    padding: 0;
 }
 
 .navbar__item {
-    flex-basis: 20%;
     list-style-type: none;
+    padding: 1rem;
 }
 
-.navbar__logout {
-    margin-left: auto;
+.logo {
+    height: 4rem;
 }
-

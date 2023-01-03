@@ -1,13 +1,21 @@
 .bags {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .bag {
     background-color: #51bb946c;
-    border: 2px dotted rgb(0, 122, 65);
+    border: 2px outset #51bb946c;
+    border-radius: 10px;
     padding: 0.7rem;
     margin: 0.5rem;
+    width: 20rem;
+    min-height: 6rem;
+}
+
+.bag_buttons {
+    display: flex;
 }
 
 .currency {
@@ -16,4 +24,20 @@
 
 .currency_piece {
     padding: 0.7rem;
+}
+
+.items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.item {
+    background-color: #51bb946c;
+    border: 2px outset #51bb946c;
+    border-radius: 10px;
+    padding: 0.7rem;
+    margin: 0.5rem;
+    width: 20rem;
+    min-height: 6rem;
 }

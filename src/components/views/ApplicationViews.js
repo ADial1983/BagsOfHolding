@@ -12,8 +12,7 @@ export const ApplicationViews = () => {
 		<Routes>
 			<Route path="/" element={
 				<>
-					<h1>Bags of Holding</h1>
-					<div>The ultimate dnd inventory tracker</div>
+					<div className="tagline">The ultimate dnd inventory tracker</div>
 
 					<Outlet />
 				</>
